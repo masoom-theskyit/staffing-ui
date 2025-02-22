@@ -5,13 +5,13 @@ import img from "../../assets/icon.png";
 
 const LatestJobs = () => {
   const [jobs, setJobs] = useState([]);
-  const [showAll, setShowAll] = useState(false); // 👈 State to control job visibility
+  const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
     setJobs(LatestJob);
   }, []);
 
-  // Agar showAll false hai to sirf pehle 4 jobs dikhao, warna saari dikhao
+
   const visibleJobs = showAll ? jobs : jobs.slice(0, 4);
 
   return (
@@ -64,11 +64,11 @@ const LatestJobs = () => {
         </div>
 
         {/* Browse All Jobs Button */}
-        {!showAll && ( // 👈 Jab showAll false ho tabhi ye button dikhaye
+        {!showAll && (
           <div className="text-center mt-8">
             <div className="flex justify-center mt-6">
               <button
-                onClick={() => setShowAll(true)} // 👈 Click pe state change ho jayegi
+                onClick={() => setShowAll(true)} 
                 className="group bg-[#96BE25] hover:bg-[#86ae15] text-white px-10 py-4 text-lg rounded-lg font-medium flex items-center gap-3 transition-all duration-300"
               >
                 <span className="group-hover:pr-2 transition-all duration-300">
