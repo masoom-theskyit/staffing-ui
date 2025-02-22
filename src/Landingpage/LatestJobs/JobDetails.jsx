@@ -15,7 +15,7 @@ const JobDetails = () => {
 
   return (
     <div className="bg-gray-100 py-10">
-      {/* Full Width Banner */}
+      
       <div 
         className="relative bg-cover bg-center text-white p-10 w-full h-[200px] flex items-center" 
         style={{ backgroundImage: `url(${img})` }} 
@@ -48,10 +48,10 @@ const JobDetails = () => {
         </div>
       </div>
 
-      {/* Job Details Section - Full Width */}
+      {/* Job Details Section  */}
       <div className="w-full max-w-[90%] mx-auto mt-8">
         <div className="grid md:grid-cols-3 gap-8">
-          {/* Job Description - Now full width */}
+          {/* Job Description */}
           <div className="md:col-span-2 bg-white p-8 rounded-lg shadow-lg border border-gray-300 w-full">
             <h3 className="bg-gray-800 text-white p-4 rounded-md flex items-center space-x-2">
               <span className="bg-white text-gray-800 p-2 rounded-full">📄</span>
@@ -75,7 +75,7 @@ const JobDetails = () => {
             </div>
           </div>
 
-          {/* Additional Job Information - Full width */}
+          {/* Additional Job Information  */}
           <div className="space-y-4 w-full text-black">
             <div className="bg-white text-black p-6 shadow-md rounded-lg">
               <h4 className="text-[#96BE25] border-b pb-2 text-lg">Offered Salary</h4>
