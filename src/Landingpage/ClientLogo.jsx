@@ -13,7 +13,7 @@ const staticClientLogo = [
 
 const ClientLogo = () => {
   const [index, setIndex] = useState(0);
-  const visibleImages = 4; // एक बार में कितनी इमेज दिखानी हैं
+  const visibleImages = 4; 
 
   useEffect(() => {
     const interval = setInterval(() => {
